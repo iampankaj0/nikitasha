@@ -45,7 +45,7 @@ a.more {
   font-size: 32px;
   font-weight: 600;
 }
-.custom-navbar .navbar-brand img {
+ .navbar-brand img {
   width: 150px;
 }
 .custom-navbar .navbar-brand > span {
@@ -481,7 +481,7 @@ a.more {
   width: 8px;
   height: 8px;
   border-radius: 50%;
-  border: 2px solid #3b5d50;
+  border: 2px solid #CC0000;
   position: absolute;
   left: 0;
   top: 8px;
