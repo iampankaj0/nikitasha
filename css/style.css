@@ -37,7 +37,7 @@ a.more {
 
 .custom-navbar {
   /* background: #3b5d50 !important; */
-  background: #CC0000 !important;
+  background: #cc0000 !important;
   /* padding-top: 20px; */
   /* padding-bottom: 20px; */
 }
@@ -45,7 +45,7 @@ a.more {
   font-size: 32px;
   font-weight: 600;
 }
- .navbar-brand img {
+.navbar-brand img {
   width: 150px;
 }
 .custom-navbar .navbar-brand > span {
@@ -133,16 +133,29 @@ a.more {
 .hero {
   /* background: #3b5d50; */
   background: silver;
-  padding: calc(4rem - 30px) 0 0rem 0;
+  /* padding: calc(4rem - 30px) 0 0rem 0;
+  background-origin: border-box;
+  background-size: cover;
+  background-position: left;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  position: relative;
+  height: 400px; */
 }
+
+.hero img {
+  width: 100%;
+  height: auto;
+}
+
 @media (min-width: 768px) {
   .hero {
-    padding: calc(4rem - 30px) 0 4rem 0;
+    /* padding: calc(4rem - 30px) 0 4rem 0; */
   }
 }
 @media (min-width: 992px) {
   .hero {
-    padding: calc(8rem - 30px) 0 8rem 0;
+    /* padding: calc(8rem - 30px) 0 8rem 0; */
   }
 }
 .hero .intro-excerpt {
@@ -151,7 +164,7 @@ a.more {
 }
 @media (min-width: 992px) {
   .hero .intro-excerpt {
-    max-width: 450px;
+    /* max-width: 450px; */
   }
 }
 .hero h1 {
@@ -276,6 +289,26 @@ a.more {
 .product-section {
   padding: 7rem 0;
 }
+.product-section .heading .category_heaidng {
+  color: #cc0000;
+  font-weight: 500;
+  text-transform: uppercase;
+  font-size: 26px;
+}
+.product-section .heading .category_heaidng:after {
+  content: "";
+  border-top: 1px double #cc0000;
+  border-bottom: 1px double #cc0000;
+  border-bottom-width: 2px;
+  width: 20%;
+  display: block;
+  padding: 1px;
+  border-radius: 10px;
+}
+
+.product-section .heading .desc {
+  color: #858585;
+}
 .product-section .product-item {
   text-align: center;
   text-decoration: none;
@@ -283,6 +316,8 @@ a.more {
   position: relative;
   padding-bottom: 50px;
   cursor: pointer;
+  border-radius: 10px;
+  box-shadow: 2px 2px 8px 3px lightgrey;
 }
 .product-section .product-item .product-thumbnail {
   margin-bottom: 30px;
@@ -346,6 +381,12 @@ a.more {
   -o-transition: 0.3s all ease;
   transition: 0.3s all ease;
 }
+
+.product-section .product-item:hover {
+  box-shadow: none;
+  border-radius: 0;
+}
+
 .product-section .product-item:hover .product-thumbnail {
   top: -25px;
 }
@@ -482,7 +523,7 @@ a.more {
   width: 8px;
   height: 8px;
   border-radius: 50%;
-  border: 2px solid #CC0000;
+  border: 2px solid #cc0000;
   position: absolute;
   left: 0;
   top: 8px;
