@@ -1,0 +1,190 @@
+.chatbot {
+  position: fixed;
+  bottom: 40px;
+  right: 40px;
+  z-index: 999;
+}
+.chatbot .chatbot_btn {
+  font-size: 25px;
+  width: 50px;
+  height: 50px;
+  border: 1px solid transparent;
+  outline: none;
+  border-radius: 50%;
+  background: #cc0000;
+  color: #fff;
+  transition: 0.3s;
+}
+
+.chatbot .chatbot_btn:hover {
+  color: #cc0000;
+  border: 1px solid #cc0000;
+  background: #fff;
+}
+
+.chatbot .chatbotContent {
+  position: fixed;
+  bottom: 100px;
+  right: 40px;
+  background-color: #fff;
+  border: 1px solid #cc0000;
+  border-radius: 10px;
+  width: 350px;
+  overflow: hidden;
+  max-height: 400px;
+  width: 0;
+  height: 0;
+  transition: 0.3s;
+}
+
+.chatbot .chatbotContent.active {
+  width: 350px;
+  height: auto;
+}
+
+.chatbot .chatbotContent h2 {
+  background-color: #cc0000;
+  color: #f2f2f2;
+  text-align: center;
+  padding: 10px;
+  font-size: 18px;
+  text-transform: uppercase;
+}
+
+.chatbot .chatbotContent h2 i {
+  display: none;
+}
+
+.chatbot .chatbotContent .chats {
+  display: flex;
+  flex-direction: column;
+  padding: 10px;
+  box-sizing: border-box;
+  row-gap: 10px;
+}
+
+.chatbot .chatbotContent .chats .chat {
+  display: flex;
+  align-items: center;
+  box-sizing: border-box;
+  column-gap: 7px;
+}
+
+.chatbot .chatbotContent .chats .chat.incoming span {
+  background-color: #ff00000f;
+  color: #cc0000;
+  padding: 0 10px;
+  border-radius: 7px;
+}
+
+.chatbot .chatbotContent .chats .chat.outgoing span {
+  margin: 0 0 0 auto;
+  background-color: #cc0000;
+  color: #fff;
+  padding: 0 10px;
+  border-radius: 7px;
+}
+
+.chatbot .chatbotContent .chats i {
+  width: 30px;
+  height: 30px;
+  font-size: 16px;
+  background: #cc0000;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #f2f2f2 !important;
+  border-radius: 7px;
+}
+
+.chatbot .chatbotContent .chatInput {
+  display: flex;
+  align-items: center;
+  padding: 10px;
+  background-color: #ff00000f;
+  width: 100%;
+}
+
+.chatbot .chatbotContent .chatInput input {
+  width: 100%;
+  border: 1px solid silver;
+  padding: 0 10px;
+  height: 40px;
+  outline: none;
+}
+
+.chatbot .chatbotContent .chatInput button {
+  border: 1px solid silver;
+  height: 40px;
+  width: 40px;
+  outline: none;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: silver;
+}
+
+.chatbot .chatbotContent .chatInput button:hover {
+  background-color: #cc0000;
+  color: #fff;
+}
+
+@media screen and (max-width: 575px) {
+  .chatbot {
+    bottom: 20px;
+    right: 20px;
+  }
+  .chatbot .chatbotContent {
+    bottom: 73px;
+    right: 20px;
+  }
+}
+
+@media screen and (max-width: 400px) {
+  .chatbot .chatbotContent h2 {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin: 0;
+  }
+  .chatbot .chatbotContent h2 i {
+    display: unset;
+    cursor: pointer;
+    width: 30px;
+    height: 30px;
+    background-color: silver;
+    color: #cc0000;
+    font-size: 20px;
+    border-radius: 5px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  .chatbot .chatbotContent h2 i:hover {
+    background-color: #fff;
+  }
+  .chatbot .chatbotContent {
+    position: fixed;
+    bottom: unset;
+    right: unset;
+    left: 0;
+    top: 0;
+    background-color: #fff;
+    border: none;
+    border-radius: 0;
+    width: 100%;
+    overflow: hidden;
+    max-height: unset;
+    width: 0;
+    height: 0;
+    transition: 0.3s;
+  }
+  .chatbot .chatbotContent.active {
+    width: 100%;
+    height: 100vh;
+  }
+  .chatbot .chatbotContent .chats{
+    height: calc(100vh - 110px);
+    overflow-y: auto;
+  }
+}
