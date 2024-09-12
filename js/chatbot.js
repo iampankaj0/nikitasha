@@ -6,8 +6,10 @@ const handleChatbot = () => {
   const isClassPresent = chatbotContent.classList.contains("active");
   if (isClassPresent) {
     chatbotContent.classList.remove("active");
+    chatbot_btn.innerHTML = `<i class="fa-solid fa-comment-dots"></i>`
   } else {
     chatbotContent.classList.add("active");
+    chatbot_btn.innerHTML = `<i class="fa-solid fa-xmark closeChatBtn"></i>`
   }
 };
 
