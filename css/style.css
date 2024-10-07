@@ -5,6 +5,19 @@
 * License: https://creativecommons.org/licenses/by/3.0/
 */
 @import url("https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap");
+
+/* Gia Variable Black */
+@import url("https://fonts.adobe.com/fonts/gia-variable?vf-instance=Black&vf-font-size=100&vf-font=GiaVariable-UltraLite&family=GiaBlack");
+
+/* Gia Variable Regular */
+/* @import url("https://fonts.adobe.com/fonts/gia-variable?vf-instance=Regular&vf-font-size=100&vf-font=GiaVariable-UltraLite"); */
+
+/* Monserrat Light */
+/* @import url("https://fonts.adobe.com/fonts/gia-variable?vf-instance=Regular&vf-font-size=100&vf-font=GiaVariable-UltraLite"); */
+
+
+
+
 body {
   overflow-x: hidden;
   position: relative;
@@ -17,7 +30,7 @@ body {
   color: #6a6a6a;
   font-size: 14px;
   /* background-color: #eff2f1; */
-  background-color: #D6E4E5;
+  background-color: #eeeeee;
 }
 
 a {
