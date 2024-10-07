@@ -37,7 +37,7 @@ a {
   position: relative;
   z-index: 99;
   padding: 7px 0;
-  background-color: #cc0000;
+  background-color: #7F8D8C;
 }
 /* .header .item-left{
 	flex:0 0 17%;
@@ -141,7 +141,7 @@ a {
 }
 .header .menu > ul > li .sub-menu.mega-menu-column-4 > .list-item .title {
   font-size: 16px;
-  color: #cc0000;
+  color: #D15E00;
   font-weight: 500;
   line-height: 1;
   padding: 10px 0;
@@ -442,7 +442,7 @@ a {
     
 }
 .sub-menu a:hover{
-    color: #cc0000;
+    color: #D15E00;
 }
 .sub-menu a:hover img {
     width: 100%;
