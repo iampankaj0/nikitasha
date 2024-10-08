@@ -37,7 +37,7 @@ a {
   position: relative;
   z-index: 99;
   padding: 7px 0;
-  background-color: #7F8D8C;
+  background-color: #7f8d8c;
 }
 /* .header .item-left{
 	flex:0 0 17%;
@@ -50,12 +50,12 @@ a {
 }
 /* .header .item-center{
 	flex:0 0 66%;
-}
-.header .item-right{
-	flex:0 0 17%;
-	display: flex;
-	justify-content: flex-end;
 } */
+.header .item-right {
+  /* flex:0 0 17%; */
+  display: flex;
+  justify-content: flex-end;
+}
 .header .item-right a {
   text-decoration: none;
   font-size: 16px;
@@ -63,6 +63,17 @@ a {
   display: inline-block;
   margin-left: 10px;
   transition: color 0.3s ease;
+  width: 30px;
+  height: 30px;
+  background-color: #d15e00;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 50%;
+}
+.header .item-right a:hover {
+  color: #d15e00!important;
+  background-color: #fff!important;
 }
 .header .menu > ul > li {
   display: inline-block;
@@ -141,7 +152,7 @@ a {
 }
 .header .menu > ul > li .sub-menu.mega-menu-column-4 > .list-item .title {
   font-size: 16px;
-  color: #D15E00;
+  color: #d15e00;
   font-weight: 500;
   line-height: 1;
   padding: 10px 0;
@@ -408,22 +419,22 @@ a {
   }
 }
 
-.sub-menu a .imgsec{
-    width: 100%;
-    height: auto;
-    overflow: hidden;
-    border-radius: 10px;
-    display: block;
+.sub-menu a .imgsec {
+  width: 100%;
+  height: auto;
+  overflow: hidden;
+  border-radius: 10px;
+  display: block;
 }
 
-.sub-menu a{
-    transition: .3s;
+.sub-menu a {
+  transition: 0.3s;
 }
 
 .sub-menu img {
   width: 100%;
   height: auto;
-  transition: .3s;
+  transition: 0.3s;
 }
 
 /* .sub-menu img:hover {
@@ -432,21 +443,17 @@ a {
   transform: scale(1.1);
 } */
 
-
-
-.sub-menu h3{
-    font-weight: 500;
-    font-size: 16px;
-    text-align: center;
-    margin-top: 8px;
-    
+.sub-menu h3 {
+  font-weight: 500;
+  font-size: 16px;
+  text-align: center;
+  margin-top: 8px;
 }
-.sub-menu a:hover{
-    color: #D15E00;
+.sub-menu a:hover {
+  color: #d15e00;
 }
 .sub-menu a:hover img {
-    width: 100%;
-    height: auto;
-    transform: scale(1.1);
-  }
-  
+  width: 100%;
+  height: auto;
+  transform: scale(1.1);
+}
