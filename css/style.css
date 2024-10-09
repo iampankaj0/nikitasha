@@ -1004,3 +1004,14 @@ textarea {
 .carousel-indicators li.active {
   background-color: #d15e00;
 }
+
+
+.connect_megaLinks a{
+  padding: 10px!important;
+  line-height: 1.5;
+}
+
+.connect_megaLinks a:hover{
+  background-color: #d15e00;
+  color: #fff!important;
+}
